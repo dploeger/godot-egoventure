@@ -1,0 +1,4 @@
+.import
+addons/godot-plugin-refresher 
+addons/zylann.editor_debugger
+test.tscn

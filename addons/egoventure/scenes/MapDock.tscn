@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/egoventure/scenes/MapDock.gd" type="Script" id=1]
+
+[node name="MapDock" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 300 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Layout" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Toolbar" type="PanelContainer" parent="Layout"]
+margin_right = 1024.0
+margin_bottom = 34.0
+
+[node name="New" type="MenuButton" parent="Layout/Toolbar"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 27.0
+text = "New..."
+align = 0
+items = [ "4 Panorama", null, 0, false, false, 0, 0, null, "", false ]
+switch_on_hover = true
+
+[node name="MapContainer" type="Control" parent="Layout"]
+margin_top = 38.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_vertical = 3
